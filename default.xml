@@ -491,7 +491,7 @@
   <project path="hardware/ti/dra7xx" name="android-sdk/platform-hardware-ti-dra7xx" remote="git-ti-mirror" revision="d-marshmallow-release" groups="ti" />
   <project path="external/libdrm" name="android-sdk/libdrm" remote="git-ti-mirror" revision="marshmallow" groups="ti" />
   <!-- project path="bionic" name="android-sdk/platform-bionic" remote="git-ti-mirror" revision="d-lollipop-release" groups="ti" />-->
-  <project path="hardware/ti/ipc" name="ipc/ipcdev" remote="git-ti-mirror" revision="refs/tags/3.40.00.06" groups="ti" />
-  <project path="hardware/ti/dce" name="android-sdk/repo-libdce" remote="git-ti-mirror" revision="refs/tags/3.00.09.00" groups="ti" />
+  <project path="hardware/ti/ipc" name="ipc/ipcdev" remote="git-ti-mirror" revision="refs/tags/3.42.01.03" groups="ti" />
+  <project path="hardware/ti/dce" name="android-sdk/repo-libdce" remote="git-ti-mirror" revision="refs/tags/3.00.10.01" groups="ti" />
 
 </manifest>
