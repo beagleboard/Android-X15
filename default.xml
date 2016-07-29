@@ -484,15 +484,17 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
 
+
 <!-- TI addons from git.ti.com -->
   <project path="device/ti/proprietary-open" name="android-sdk/device-ti-proprietary-open" remote="git-ti-mirror" revision="d-marshmallow-release" groups="ti" />
-  <!-- project path="device/ti/common-open" name="android-sdk/device-ti-common-open" remote="git-ti-mirror" revision="d-lollipop-release" groups="ti" />-->
   <project path="device/ti/jacinto6evm" name="android-sdk/device-ti-jacinto6evm" remote="git-ti-mirror" revision="d-marshmallow-release" groups="device,ti" />
   <project path="device/ti/am57xevm" name="android-sdk/device-ti-am57xevm" remote="git-ti-mirror" revision="d-marshmallow-release" groups="device,ti" />
+
+<!-- TI MM -->
   <project path="hardware/ti/dra7xx" name="android-sdk/platform-hardware-ti-dra7xx" remote="git-ti-mirror" revision="d-marshmallow-release" groups="ti" />
   <project path="external/libdrm" name="android-sdk/libdrm" remote="git-ti-mirror" revision="ti-2.4.67" groups="ti" />
-  <!-- project path="bionic" name="android-sdk/platform-bionic" remote="git-ti-mirror" revision="d-lollipop-release" groups="ti" />-->
   <project path="hardware/ti/ipc" name="ipc/ipcdev" remote="git-ti-mirror" revision="refs/tags/3.43.00.01" groups="ti" />
+  <project path="hardware/ti/linuxutils" name="ipc/ludev" remote="git-ti-mirror" revision="refs/tags/4.11.00.01" groups="ti" />
   <project path="hardware/ti/dce" name="android-sdk/repo-libdce" remote="git-ti-mirror" revision="refs/tags/3.00.11.00" groups="ti" />
 
 </manifest>
