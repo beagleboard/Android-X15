@@ -2,8 +2,16 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".."
+           fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com/" />
+
+  <remote  name="omap-mirror"
+           fetch="git://git.omapzoom.org"
+           review="http://review.omapzoom.org" />
+
+  <remote  name="git-ti-com"
+           fetch=".." />
+
   <default revision="oreo-mr1-release"
            remote="aosp"
            sync-j="4" />
@@ -204,7 +212,7 @@
   <project path="external/libcxx" name="platform/external/libcxx" groups="pdk" />
   <project path="external/libcxxabi" name="platform/external/libcxxabi" groups="pdk" />
   <project path="external/libdivsufsort" name="platform/external/libdivsufsort" groups="pdk" />
-  <project path="external/libdrm" name="platform/external/libdrm" groups="pdk" />
+<!--  <project path="external/libdrm" name="platform/external/libdrm" groups="pdk" /> -->
   <project path="external/libedit" name="platform/external/libedit" groups="pdk" />
   <project path="external/libese" name="platform/external/libese" groups="pdk" />
   <project path="external/libdaemon" name="platform/external/libdaemon" groups="pdk" />
@@ -621,5 +629,20 @@
   <project path="tools/tradefederation/contrib" name="platform/tools/tradefederation/contrib" groups="pdk,tradefed" />
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
+
+  <!-- TI addons -->
+  <project path="device/ti/proprietary-open" name="android/device-ti-proprietary-open" remote="git-ti-com" revision="d-oreo-mr1-core-release" groups="ti" />
+  <project path="device/ti/jacinto6evm" name="android/device-ti-jacinto6evm" remote="git-ti-com" revision="d-oreo-mr1-core-release" groups="device,ti" />
+  <project path="device/ti/am57xevm" name="android/device-ti-am57xevm" remote="git-ti-com" revision="d-oreo-mr1-core-release" groups="device,ti" />
+
+  <!-- TI Connectivity -->
+  <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan" remote="omap-mirror" revision="d-oreo-mr1-release" groups="ti" />
+
+  <!-- TI MM -->
+  <project path="external/libdrm" name="android/external-libdrm" remote="git-ti-com" revision="d-oreo-mr1-release" groups="ti" />
+  <project path="hardware/ti/dra7xx" name="platform/hardware/ti/dra7xx" remote="omap-mirror" revision="d-oreo-mr1-release" groups="ti" />
+  <project path="hardware/ti/ipc" name="ipc/ipcdev" remote="git-ti-com" revision="refs/tags/3.47.00.00" groups="ti" />
+  <project path="hardware/ti/linuxutils" name="ipc/ludev" remote="git-ti-com" revision="lu-next" groups="ti" />
+  <project path="hardware/ti/dce" name="repo/libdce" remote="omap-mirror" revision="refs/tags/3.00.14.00" groups="ti" />
 
 </manifest>
