@@ -634,16 +634,16 @@
   <project path="external/libdrm" name="android/external-libdrm" remote="git-ti-com" revision="d-oreo-mr1-core-release" groups="ti" />
   <project path="frameworks/native" name="android/frameworks-native" remote="git-ti-com" revision="d-oreo-mr1-core-release" groups="ti" />
 
-  <!-- TI addons -->
+  <!-- CORE-COMMON: TI addons -->
   <project path="device/ti/proprietary-open" name="android/device-ti-proprietary-open" remote="git-ti-com" revision="d-oreo-mr1-core-release" groups="ti" />
   <project path="device/ti/jacinto6evm" name="android/device-ti-jacinto6evm" remote="git-ti-com" revision="d-oreo-mr1-core-release" groups="device,ti" />
   <project path="device/ti/am57xevm" name="android/device-ti-am57xevm" remote="git-ti-com" revision="d-oreo-mr1-core-release" groups="device,ti" />
+  <project path="hardware/ti/dra7xx" name="android/hardware-ti-dra7xx" remote="git-ti-com" revision="d-oreo-mr1-core-release" groups="ti" />
 
-  <!-- TI Connectivity -->
+  <!-- CORE-EXT: TI Connectivity -->
   <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan" remote="omap-mirror" revision="d-oreo-mr1-release" groups="ti" />
 
-  <!-- TI MM -->
-  <project path="hardware/ti/dra7xx" name="platform/hardware/ti/dra7xx" remote="omap-mirror" revision="d-oreo-mr1-release" groups="ti" />
+  <!-- CORE-EXT: TI MM -->
   <project path="hardware/ti/ipc" name="ipc/ipcdev" remote="git-ti-com" revision="refs/tags/3.47.00.00" groups="ti" />
   <project path="hardware/ti/linuxutils" name="ipc/ludev" remote="git-ti-com" revision="lu-next" groups="ti" />
   <project path="hardware/ti/dce" name="repo/libdce" remote="omap-mirror" revision="refs/tags/3.00.14.00" groups="ti" />
