@@ -371,7 +371,7 @@
   <project path="frameworks/minikin" name="platform/frameworks/minikin" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk" />
   <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/native" name="platform/frameworks/native" groups="pdk" />
+<!-- <project path="frameworks/native" name="platform/frameworks/native" groups="pdk" /> -->
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" groups="pdk-fs" />
   <project path="frameworks/opt/bluetooth" name="platform/frameworks/opt/bluetooth" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs,pdk-fs" />
@@ -630,6 +630,10 @@
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
+  <!-- AOSP Forks -->
+  <project path="external/libdrm" name="android/external-libdrm" remote="git-ti-com" revision="d-oreo-mr1-core-release" groups="ti" />
+  <project path="frameworks/native" name="android/frameworks-native" remote="git-ti-com" revision="d-oreo-mr1-core-release" groups="ti" />
+
   <!-- TI addons -->
   <project path="device/ti/proprietary-open" name="android/device-ti-proprietary-open" remote="git-ti-com" revision="d-oreo-mr1-core-release" groups="ti" />
   <project path="device/ti/jacinto6evm" name="android/device-ti-jacinto6evm" remote="git-ti-com" revision="d-oreo-mr1-core-release" groups="device,ti" />
@@ -639,7 +643,6 @@
   <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan" remote="omap-mirror" revision="d-oreo-mr1-release" groups="ti" />
 
   <!-- TI MM -->
-  <project path="external/libdrm" name="android/external-libdrm" remote="git-ti-com" revision="d-oreo-mr1-release" groups="ti" />
   <project path="hardware/ti/dra7xx" name="platform/hardware/ti/dra7xx" remote="omap-mirror" revision="d-oreo-mr1-release" groups="ti" />
   <project path="hardware/ti/ipc" name="ipc/ipcdev" remote="git-ti-com" revision="refs/tags/3.47.00.00" groups="ti" />
   <project path="hardware/ti/linuxutils" name="ipc/ludev" remote="git-ti-com" revision="lu-next" groups="ti" />
