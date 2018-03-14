@@ -33,7 +33,7 @@
   </project>
   <project path="art" name="platform/art" groups="pdk" />
   <project path="bionic" name="platform/bionic" groups="pdk" />
-  <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
+<!--  <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" /> -->
   <project path="compatibility/cdd" name="platform/compatibility/cdd" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs" />
@@ -631,6 +631,7 @@
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
   <!-- AOSP Forks -->
+  <project path="bootable/recovery" name="android/platform-bootable-recovery" remote="git-ti-com" revision="d-oreo-mr1-core-release" groups="ti" />
   <project path="external/libdrm" name="android/external-libdrm" remote="git-ti-com" revision="d-oreo-mr1-core-release" groups="ti" />
   <project path="frameworks/native" name="android/frameworks-native" remote="git-ti-com" revision="d-oreo-mr1-core-release" groups="ti" />
 
