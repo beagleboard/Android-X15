@@ -646,7 +646,7 @@
   <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan" remote="omap-mirror" revision="d-oreo-mr1-release" groups="ti" />
 
   <!-- CORE-EXT: TI MM -->
-  <project path="hardware/ti/ipc" name="ipc/ipcdev" remote="git-ti-com" revision="refs/tags/3.47.00.00" groups="ti" />
+  <project path="hardware/ti/ipc" name="ipc/ipcdev" remote="git-ti-com" revision="refs/tags/3.47.01.00" groups="ti" />
   <project path="hardware/ti/linuxutils" name="ipc/ludev" remote="git-ti-com" revision="lu-next" groups="ti" />
   <project path="hardware/ti/dce" name="repo/libdce" remote="omap-mirror" revision="refs/tags/3.00.15.00" groups="ti" />
 
