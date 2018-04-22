@@ -575,7 +575,7 @@
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs" />
   <project path="system/bt" name="platform/system/bt" groups="pdk" />
   <project path="system/ca-certificates" name="platform/system/ca-certificates" groups="pdk" />
-  <project path="system/connectivity/wificond" name="platform/system/connectivity/wificond" groups="pdk" />
+<!--  <project path="system/connectivity/wificond" name="platform/system/connectivity/wificond" groups="pdk" /> -->
   <project path="system/connectivity/wifilogd" name="platform/system/connectivity/wifilogd" groups="pdk" />
   <project path="system/chre" name="platform/system/chre" groups="pdk" />
   <project path="system/core" name="platform/system/core" groups="pdk" />
@@ -594,7 +594,7 @@
   <project path="system/nfc" name="platform/system/nfc" groups="pdk" />
   <project path="system/nvram" name="platform/system/nvram" groups="pdk" />
   <project path="system/security" name="platform/system/security" groups="pdk" />
-  <project path="system/sepolicy" name="platform/system/sepolicy" groups="pdk" />
+<!--  <project path="system/sepolicy" name="platform/system/sepolicy" groups="pdk" /> -->
   <project path="system/tools/aidl" name="platform/system/tools/aidl" groups="pdk" />
   <project path="system/timezone" name="platform/system/timezone" groups="pdk" />
   <project path="system/tools/hidl" name="platform/system/tools/hidl" groups="pdk" />
@@ -634,6 +634,8 @@
   <project path="bootable/recovery" name="android/platform-bootable-recovery" remote="git-ti-com" revision="d-oreo-mr1-core-release" groups="ti" />
   <project path="external/libdrm" name="android/external-libdrm" remote="git-ti-com" revision="d-oreo-mr1-core-release" groups="ti" />
   <project path="frameworks/native" name="android/frameworks-native" remote="git-ti-com" revision="d-oreo-mr1-core-release" groups="ti" />
+  <project path="system/connectivity/wificond" name="android/system-connectivity-wificond" remote="git-ti-com" revision="d-oreo-mr1-core-release" groups="ti" />
+  <project path="system/sepolicy" name="android/system-sepolicy" remote="git-ti-com" revision="d-oreo-mr1-core-release" groups="ti" />
 
   <!-- CORE-COMMON: TI addons -->
   <project path="device/ti/proprietary-open" name="android/device-ti-proprietary-open" remote="git-ti-com" revision="d-oreo-mr1-core-release" groups="ti" />
