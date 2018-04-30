@@ -10,7 +10,7 @@
            review="http://review.omapzoom.org" />
 
   <remote  name="git-ti-com"
-           fetch=".." />
+           fetch="git://git.ti.com/" />
 
   <default revision="oreo-mr1-release"
            remote="aosp"
